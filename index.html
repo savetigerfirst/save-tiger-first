@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Tiger First</title>
+    <style>
+        /* Modern CSS Reset & General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: #222; line-height: 1.6; background-color: #f8faf8; }
+        
+        /* Navigation */
+        header { background: #1b4332; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        header .logo { font-size: 1.5rem; font-weight: bold; color: #52b788; text-decoration: none; }
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: 500; }
+        nav a:hover { color: #74c69d; }
+
+        /* Hero Banner */
+        .hero { 
+            background: url('banner.jpg') center/cover no-repeat; 
+            color: #111; 
+            padding: 260px 20px 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .hero-content {
+            background: rgba(255, 255, 255, 0.9);
+            display: inline-block;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            max-width: 800px;
+        }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 12px; color: #081c15; }
+        .hero p { font-size: 1.1rem; margin-bottom: 20px; color: #2d6a4f; font-weight: 600; }
+        .btn { background: #1b4332; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; }
+        .btn:hover { background: #2d6a4f; }
+
+        /* Container Sections */
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        h2 { color: #1b4332; text-align: center; margin-bottom: 30px; font-size: 2rem; }
+
+        /* Workshop & Event Cards with Images */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); border-top: 4px solid #2d6a4f; display: flex; flex-direction: column; }
+        .card-img { width: 100%; height: 200px; object-fit: cover; }
+        .card-body { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card-title { font-size: 1.3rem; color: #1b4332; margin-bottom: 10px; }
+        .tag { background: #d8f3dc; color: #1b4332; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; display: inline-block; margin-bottom: 10px; align-self: flex-start; }
+
+        /* Campaigns / Media Highlights */
+        .campaign-box { background: #e9f5ec; padding: 25px; border-radius: 8px; margin-top: 30px; border-left: 5px solid #2d6a4f; }
+
+        /* Footer */
+        footer { background: #081c15; color: #b7e4c7; text-align: center; padding: 30px 20px; margin-top: 60px; }
+        footer p { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="#" class="logo">Save Tiger First</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#campaigns">Campaigns</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Connect with Nature, Protect the Wild</h1>
+            <p>Promoting awareness, eco-conservation, and wildlife protection through interactive learning and community engagement.</p>
+            <a href="#workshops" class="btn">Explore Upcoming Workshops</a>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container" id="about">
+        <h2>Our Mission</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #444;">
+            We aim to educate communities about forest ecosystems, plastic pollution hazards, and tiger conservation. Through structured field trips, interactive workshops, and creative campaigns, we reconnect people with nature.
+        </p>
+
+        <!-- Workshops Section -->
+        <section id="workshops" style="margin-top: 60px;">
+            <h2>Workshops & Programs</h2>
+            <div class="grid">
+                
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="_MG_7254.JPG" alt="Nature Appreciation Course" class="card-img">
+                    <div class="card-body">
+                        <div>
+                            <span class="tag">Karnataka Forest Dept. Partner</span>
+                            <h3 class="card-title">Nature Appreciation Course</h3>
+                            <p>A full-day interactive session on understanding, experiencing, and exploring native ecosystems.</p>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;"><strong>Location:</strong> FTATI, Kadugodi, Bangalore</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="NWPP.png" alt="Say No to NWPP Bags" class="card-img">
+                    <div class="card-body">
+                        <div>
+                            <span class="tag">Community Awareness</span>
+                            <h3 class="card-title">Say No to NWPP Bags</h3>
+                            <p>Educating local vendors and citizens on the environmental hazards of non-woven polypropylene bags.</p>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;"><strong>Focus:</strong> Plastic Ban & Alternatives</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="et1.jpg" alt="Recycle To Roar (#eT)" class="card-img">
+                    <div class="card-body">
+                        <div>
+                            <span class="tag">Eco Event</span>
+                            <h3 class="card-title">Recycle To Roar (#eT)</h3>
+                            <p>Combining e-waste management with tiger conservation awareness in collaboration with local partners.</p>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;"><strong>Location:</strong> Gopalan Legacy Mall</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Media Section -->
+        <section id="campaigns">
+            <div class="campaign-box">
+                <h3>Earth Day Theme Song Campaign</h3>
+                <p>Featured in <em>The Sunday Times of India</em> for innovative environmental outreach using music and video to drive conservation awareness across Bangalore.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <p><strong>Save Tiger First (STF)</strong></p>
+        <p>Email: stf.savetigerfirst@gmail.com | Phone: +91 9035112511</p>
+        <p style="font-size: 0.85rem; color: #74c69d; margin-top: 15px;">&copy; Save Tiger First. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
